@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.header { grid-area: header; }
+.navigation { grid-area: nav; }
+.section { grid-area: section; }
+.infobox { grid-area: info; }
+.footer { grid-area: footer; }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'nav section section section section info'
+    'nav section section section section info'
+    'nav section section section section info'
+    'nav footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: rgb(102, 204, 255);
+  padding: 10px;
+}
+
+.grid-container div, header, nav, footer, section, aside {
+  background-color: rgb(102, 204, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: rgb(0, 0, 102);
+}
+</style>
+</head>
+<body>
+
+<h1>Grid layout website project</h1>
+
+<div class="grid-container">
+  <header class="header">Cats</header>
+  <nav class="navigation">Home<br>Cat Shelters<br>Links</nav>
+  <section class="section">Section</section>  
+  <aside class="infobox">Info</aside>
+  <footer class="footer">Footer</footer>
+</div>
+
+</body>
+</html>
