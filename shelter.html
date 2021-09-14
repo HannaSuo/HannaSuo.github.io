@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.header { grid-area: header; }
-.navigation { grid-area: nav; }
-.section { grid-area: section; }
-.infobox { grid-area: info; }
-.footer { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'nav section section section section info'
-    'nav section section section section info'
-    'nav section section section section info'
-    'nav footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: rgb(102, 204, 255);
-  padding: 10px;
-}
-
-.grid-container div, header, nav, footer, section, aside {
-  background-color: rgb(102, 204, 255);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  color: rgb(0, 0, 102);
-}
-</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>Grid layout website project</h1>
 
 <div class="grid-container">
-  <header class="header">Cats</header>
-  <nav class="navigation">Home<br>Cat Shelters<br>Links</nav>
-  <section class="section">Section</section>  
-  <aside class="infobox">Info</aside>
-  <footer class="footer">Footer</footer>
+  <header class="header">Cat shelters</header>
+  <nav class="navigation">
+      <a link href="index.html"> Home </a><br>
+      <a link href="shelters.html">Cat Shelters</a><br>
+      <a link href="links.html">Links</a></nav>
+  <section class="section">
+      <p>
+    Cat shelters are usually run by a group of volunteers. 
+    They take in abandoned cats from feral cat populations.<br> 
+    Also people who have to give up their cat for some reason can bring in their cats.
+    In a cat shelter volunteers take care of the cats and <br> make sure they have plenty of water and food. <br>
+    If a cat is ill they take it to the vet. <br> Veterinary bills are usually the biggest expense in a cat shelter. <br>
+    Feral cats often have respitory illnesses caused by various viruses. <br>
+    All cats are also dewormed and vaccinated <br> before they can start searching for a new home.<br>
+    Only few cat shelters are lucky enough to get support from the municipality. <br>
+    Most cat shelters have to survive on donations <br> and funds collected through fund raising events.
+    </p>
+  </section>  
+  <aside class="infobox"><img src="cat_on_atree.jpg" alt="Cat sits on a birdhouse"><br> 
+    Karsten Paulick. Pixabay. Pixabay license
+    </aside>
+  <footer class="footer">&copy; W3Schools </footer>
 </div>
 
 </body>
